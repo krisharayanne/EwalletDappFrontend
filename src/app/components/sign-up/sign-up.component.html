@@ -1,0 +1,24 @@
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<br><br><br><br>
+<div class="signUpBg">
+<h1>Sign Up</h1>
+<label for="name">Name*</label>
+<br><br>
+  <input type="text" id="name"  required [(ngModel)]="name" name="name" placeholder="Type your name">
+  <br><br>
+  <label for="username">Username*</label>
+  <br><br>
+  <input type="text" id="username" required [(ngModel)]="username" name="username" placeholder="Type your username">
+  <br><br>
+  <label for="password">Password*</label>
+  <br><br>
+  <input type="text" id="password" required [(ngModel)]="password" name="password" placeholder="Type your password">
+  <br><br>
+<button class="button" (click)="addIndividual()">Sign Up</button>
+<h3>Message: </h3>
+<h3>{{message}}</h3>
+<h3>Transaction Hash: </h3>
+<h3><a [style.color] = "'white'" href="{{transactionHash}}">{{transactionHash}}</a></h3>
+
+</div>
